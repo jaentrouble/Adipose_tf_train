@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/LeicaMicrosystems.DataEntities.V3_2">
+  <Id>2030abd0-8396-4491-aa9c-6ecf940d7ab1</Id>
+  <ParentId i:nil="true" />
+  <LinkedItemId i:nil="true" />
+  <Type>Computer</Type>
+  <SubType i:nil="true" />
+  <Index i:nil="true" />
+  <Name>This PC</Name>
+  <FolderTypeId i:nil="true" />
+  <Keywords i:nil="true" />
+  <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+  <Owner i:nil="true" />
+  <Reader i:nil="true" />
+  <Children>
+    <Item>
+      <Id>ce5e5bdb-8ae3-4e02-aaf1-3a46ff6ffe3f</Id>
+      <ParentId>2030abd0-8396-4491-aa9c-6ecf940d7ab1</ParentId>
+      <LinkedItemId i:nil="true" />
+      <Type>Drive</Type>
+      <SubType>data (D:)</SubType>
+      <Index i:nil="true" />
+      <Name>D:\</Name>
+      <FolderTypeId i:nil="true" />
+      <Keywords i:nil="true" />
+      <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+      <Owner i:nil="true" />
+      <Reader i:nil="true" />
+      <Children>
+        <Item>
+          <Id>0cd76b6a-dd4f-48e6-b7c1-8cf985ee47eb</Id>
+          <ParentId>ce5e5bdb-8ae3-4e02-aaf1-3a46ff6ffe3f</ParentId>
+          <LinkedItemId i:nil="true" />
+          <Type>Folder</Type>
+          <SubType i:nil="true" />
+          <Index i:nil="true" />
+          <Name>SY</Name>
+          <FolderTypeId i:nil="true" />
+          <Keywords i:nil="true" />
+          <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+          <Owner i:nil="true" />
+          <Reader i:nil="true" />
+          <Children>
+            <Item>
+              <Id>0ea5e12f-da5e-4315-9fd4-226890ca0b6d</Id>
+              <ParentId>0cd76b6a-dd4f-48e6-b7c1-8cf985ee47eb</ParentId>
+              <LinkedItemId i:nil="true" />
+              <Type>Folder</Type>
+              <SubType i:nil="true" />
+              <Index i:nil="true" />
+              <Name>H&amp;E</Name>
+              <FolderTypeId i:nil="true" />
+              <Keywords i:nil="true" />
+              <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+              <Owner i:nil="true" />
+              <Reader i:nil="true" />
+              <Children>
+                <Item>
+                  <Id>29cfc56f-e0f9-49ff-9d72-7d9d6c7513de</Id>
+                  <ParentId>0ea5e12f-da5e-4315-9fd4-226890ca0b6d</ParentId>
+                  <LinkedItemId i:nil="true" />
+                  <Type>Folder</Type>
+                  <SubType i:nil="true" />
+                  <Index i:nil="true" />
+                  <Name>병리</Name>
+                  <FolderTypeId i:nil="true" />
+                  <Keywords i:nil="true" />
+                  <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+                  <Owner i:nil="true" />
+                  <Reader i:nil="true" />
+                  <Children>
+                    <Item>
+                      <Id>81dd77f7-c875-4d62-943c-f8187123d328</Id>
+                      <ParentId>29cfc56f-e0f9-49ff-9d72-7d9d6c7513de</ParentId>
+                      <LinkedItemId i:nil="true" />
+                      <Type>Folder</Type>
+                      <SubType i:nil="true" />
+                      <Index i:nil="true" />
+                      <Name>0621</Name>
+                      <FolderTypeId i:nil="true" />
+                      <Keywords i:nil="true" />
+                      <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+                      <Owner i:nil="true" />
+                      <Reader i:nil="true" />
+                      <Children>
+                        <Item>
+                          <Id>eba12f8d-b061-4e91-92f1-8e5cda996c9e</Id>
+                          <ParentId>81dd77f7-c875-4d62-943c-f8187123d328</ParentId>
+                          <LinkedItemId i:nil="true" />
+                          <Type>Folder</Type>
+                          <SubType i:nil="true" />
+                          <Index i:nil="true" />
+                          <Name>CK</Name>
+                          <FolderTypeId i:nil="true" />
+                          <Keywords i:nil="true" />
+                          <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+                          <Owner i:nil="true" />
+                          <Reader i:nil="true" />
+                          <Children>
+                            <Item>
+                              <Id>b57df2a7-31eb-448f-8fe4-7784f69b5c77</Id>
+                              <ParentId>eba12f8d-b061-4e91-92f1-8e5cda996c9e</ParentId>
+                              <LinkedItemId i:nil="true" />
+                              <Type>Folder</Type>
+                              <SubType i:nil="true" />
+                              <Index i:nil="true" />
+                              <Name>5</Name>
+                              <FolderTypeId i:nil="true" />
+                              <Keywords i:nil="true" />
+                              <LastModifiedDate>2020-06-22T03:43:36.8117674+09:00</LastModifiedDate>
+                              <Owner i:nil="true" />
+                              <Reader i:nil="true" />
+                              <Children>
+                                <Item>
+                                  <Id>4504ff66-59f4-459d-acdf-6bfc6b87e73d</Id>
+                                  <ParentId>b57df2a7-31eb-448f-8fe4-7784f69b5c77</ParentId>
+                                  <LinkedItemId i:nil="true" />
+                                  <Type>Collection</Type>
+                                  <SubType>Image</SubType>
+                                  <Index i:nil="true" />
+                                  <Name>CK5_1_0004.jpg</Name>
+                                  <FolderTypeId i:nil="true" />
+                                  <Keywords></Keywords>
+                                  <LastModifiedDate>2020-06-22T03:43:37.5699909+09:00</LastModifiedDate>
+                                  <Owner i:nil="true" />
+                                  <Reader i:nil="true" />
+                                  <Children>
+                                    <Item>
+                                      <Id>6a8df956-d67b-434e-8b61-d345bbdd12cb</Id>
+                                      <ParentId>4504ff66-59f4-459d-acdf-6bfc6b87e73d</ParentId>
+                                      <LinkedItemId i:nil="true" />
+                                      <Type>Leaf</Type>
+                                      <SubType>Image</SubType>
+                                      <Index i:nil="true" />
+                                      <Name>CK5_1_0004.jpg</Name>
+                                      <FolderTypeId i:nil="true" />
+                                      <Keywords></Keywords>
+                                      <LastModifiedDate>2020-06-22T03:43:37.559003+09:00</LastModifiedDate>
+                                      <Owner i:nil="true" />
+                                      <Reader i:nil="true" />
+                                      <Children>
+                                        <Item>
+                                          <Id>fc147bb3-46a3-4117-8fba-13db184263c7</Id>
+                                          <ParentId>6a8df956-d67b-434e-8b61-d345bbdd12cb</ParentId>
+                                          <LinkedItemId i:nil="true" />
+                                          <Type>Derived</Type>
+                                          <SubType>Image</SubType>
+                                          <Index i:nil="true" />
+                                          <Name>CK5_1_0004.jpg.thb</Name>
+                                          <FolderTypeId i:nil="true" />
+                                          <Keywords></Keywords>
+                                          <LastModifiedDate>2020-06-22T03:43:37.559003+09:00</LastModifiedDate>
+                                          <Owner i:nil="true" />
+                                          <Reader i:nil="true" />
+                                        </Item>
+                                      </Children>
+                                    </Item>
+                                    <Item>
+                                      <Id>14bf883b-64ee-4f06-bceb-1e17d5bb716a</Id>
+                                      <ParentId>4504ff66-59f4-459d-acdf-6bfc6b87e73d</ParentId>
+                                      <LinkedItemId i:nil="true" />
+                                      <Type>Leaf</Type>
+                                      <SubType>DXAnnotationData</SubType>
+                                      <Index i:nil="true" />
+                                      <Name>CK5_1_0004.jpg.anx</Name>
+                                      <FolderTypeId i:nil="true" />
+                                      <Keywords></Keywords>
+                                      <LastModifiedDate>2020-06-22T03:43:36.9006756+09:00</LastModifiedDate>
+                                      <Owner i:nil="true" />
+                                      <Reader i:nil="true" />
+                                    </Item>
+                                    <Item>
+                                      <Id>43aa5fc8-92bb-46f2-a918-362ccef63d61</Id>
+                                      <ParentId>4504ff66-59f4-459d-acdf-6bfc6b87e73d</ParentId>
+                                      <LinkedItemId i:nil="true" />
+                                      <Type>Leaf</Type>
+                                      <SubType>DXScaleBarSettingsData</SubType>
+                                      <Index i:nil="true" />
+                                      <Name>CK5_1_0004.jpg.sbx</Name>
+                                      <FolderTypeId i:nil="true" />
+                                      <Keywords></Keywords>
+                                      <LastModifiedDate>2020-06-22T03:43:36.9066706+09:00</LastModifiedDate>
+                                      <Owner i:nil="true" />
+                                      <Reader i:nil="true" />
+                                    </Item>
+                                    <Item>
+                                      <Id>9e7bbbe4-1220-4007-a3d7-bba107f15332</Id>
+                                      <ParentId>4504ff66-59f4-459d-acdf-6bfc6b87e73d</ParentId>
+                                      <LinkedItemId i:nil="true" />
+                                      <Type>Leaf</Type>
+                                      <SubType>DXExtendedAnnotationData</SubType>
+                                      <Index i:nil="true" />
+                                      <Name>CK5_1_0004.jpg.eax</Name>
+                                      <FolderTypeId i:nil="true" />
+                                      <Keywords></Keywords>
+                                      <LastModifiedDate>2020-06-22T03:43:36.9086675+09:00</LastModifiedDate>
+                                      <Owner i:nil="true" />
+                                      <Reader i:nil="true" />
+                                    </Item>
+                                  </Children>
+                                  <ItemValues>
+                                    <ItemValue>
+                                      <Id>e4842735-3f52-439c-aa09-a35d96444885</Id>
+                                      <ItemId>4504ff66-59f4-459d-acdf-6bfc6b87e73d</ItemId>
+                                      <Name>Image_Description</Name>
+                                      <Value xmlns:d20p1="http://www.w3.org/2001/XMLSchema" i:type="d20p1:string"></Value>
+                                    </ItemValue>
+                                    <ItemValue>
+                                      <Id>42dd0352-392c-4526-9ab0-8e40373fafd6</Id>
+                                      <ItemId>4504ff66-59f4-459d-acdf-6bfc6b87e73d</ItemId>
+                                      <Name>Image_Notes</Name>
+                                      <Value xmlns:d20p1="http://www.w3.org/2001/XMLSchema" i:type="d20p1:string"></Value>
+                                    </ItemValue>
+                                  </ItemValues>
+                                  <LasImage>
+                                    <Id>4504ff66-59f4-459d-acdf-6bfc6b87e73d</Id>
+                                    <Included>false</Included>
+                                    <Processed>true</Processed>
+                                    <UnitName>Microns</UnitName>
+                                    <CreationUserName>생리학교실-PC\생리학교실</CreationUserName>
+                                    <ModificationUserName>생리학교실-PC\생리학교실</ModificationUserName>
+                                    <AcquiredDate>2020-06-22T03:43:36.8876909+09:00</AcquiredDate>
+                                    <CreationDate>2020-06-22T03:43:36.8117674+09:00</CreationDate>
+                                    <ImportDate i:nil="true" />
+                                    <XMetresPerPixel>3.8100006811555337E-07</XMetresPerPixel>
+                                    <YMetresPerPixel>3.8100006811555337E-07</YMetresPerPixel>
+                                    <BitDepth>24</BitDepth>
+                                    <NumPixelsX>1600</NumPixelsX>
+                                    <NumPixelsY>1200</NumPixelsY>
+                                    <FileSize>477656</FileSize>
+                                    <DecimalPlaces>3</DecimalPlaces>
+                                    <Camera>
+                                      <Id>4504ff66-59f4-459d-acdf-6bfc6b87e73d</Id>
+                                      <Name>Leica ICC50 E Camera</Name>
+                                      <Serial_Number>1816110301</Serial_Number>
+                                      <Exposure>37.0 ms</Exposure>
+                                      <Gamma>1</Gamma>
+                                      <Gain>5.0 x</Gain>
+                                      <Auto_Exposure>On</Auto_Exposure>
+                                      <Brightness>60 %</Brightness>
+                                      <Black_Clip>0</Black_Clip>
+                                      <White_Clip>255</White_Clip>
+                                      <Image_Type>Colour</Image_Type>
+                                      <Capture_Format>2.0 MP (1600 x 1200) 4:3</Capture_Format>
+                                      <Shading></Shading>
+                                      <Sharpening>Off</Sharpening>
+                                    </Camera>
+                                    <ImageValues>
+                                      <ImageValue>
+                                        <Id>062bb072-f78c-4213-8428-0cb5db5c730f</Id>
+                                        <LasImageId>4504ff66-59f4-459d-acdf-6bfc6b87e73d</LasImageId>
+                                        <Name>Microscope_Stand_Name</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">DMIL</Value>
+                                      </ImageValue>
+                                      <ImageValue>
+                                        <Id>df1f4848-3a0a-4cde-95e4-76f58751dace</Id>
+                                        <LasImageId>4504ff66-59f4-459d-acdf-6bfc6b87e73d</LasImageId>
+                                        <Name>Microscope_Stand_Configuration_Software_Version_Infos</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">O969F297</Value>
+                                      </ImageValue>
+                                      <ImageValue>
+                                        <Id>50dc38f7-e916-4a25-adb6-7717f17fa79c</Id>
+                                        <LasImageId>4504ff66-59f4-459d-acdf-6bfc6b87e73d</LasImageId>
+                                        <Name>Microscope_Nosepiece_Objective_Magnification</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">20</Value>
+                                      </ImageValue>
+                                      <ImageValue>
+                                        <Id>8c20af35-5283-4f82-8175-101c4ea1142f</Id>
+                                        <LasImageId>4504ff66-59f4-459d-acdf-6bfc6b87e73d</LasImageId>
+                                        <Name>Microscope_Nosepiece_Objective_Article_No</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">11506272</Value>
+                                      </ImageValue>
+                                      <ImageValue>
+                                        <Id>d992c887-c59d-4be4-8220-f4785869dba7</Id>
+                                        <LasImageId>4504ff66-59f4-459d-acdf-6bfc6b87e73d</LasImageId>
+                                        <Name>Microscope_Nosepiece_Objective_Aperture</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">0.30</Value>
+                                      </ImageValue>
+                                      <ImageValue>
+                                        <Id>c2ad2385-e97b-47dd-ac0a-214044fb5c5f</Id>
+                                        <LasImageId>4504ff66-59f4-459d-acdf-6bfc6b87e73d</LasImageId>
+                                        <Name>Microscope_Nosepiece_Objective_Type</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">DRY</Value>
+                                      </ImageValue>
+                                      <ImageValue>
+                                        <Id>b24640bf-afbd-4d5e-b578-05c4a3daad5b</Id>
+                                        <LasImageId>4504ff66-59f4-459d-acdf-6bfc6b87e73d</LasImageId>
+                                        <Name>Microscope_Ports_Port_Name</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">VISUAL</Value>
+                                      </ImageValue>
+                                      <ImageValue>
+                                        <Id>fecf6dad-967a-43ad-a618-ea59511a7f3b</Id>
+                                        <LasImageId>4504ff66-59f4-459d-acdf-6bfc6b87e73d</LasImageId>
+                                        <Name>Microscope_Ports_Num</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">2</Value>
+                                      </ImageValue>
+                                    </ImageValues>
+                                  </LasImage>
+                                </Item>
+                              </Children>
+                            </Item>
+                          </Children>
+                        </Item>
+                      </Children>
+                    </Item>
+                  </Children>
+                </Item>
+              </Children>
+            </Item>
+          </Children>
+        </Item>
+      </Children>
+    </Item>
+  </Children>
+</Item>

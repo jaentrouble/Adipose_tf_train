@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Item xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/LeicaMicrosystems.DataEntities.V3_2">
+  <Id>2030abd0-8396-4491-aa9c-6ecf940d7ab1</Id>
+  <ParentId i:nil="true" />
+  <LinkedItemId i:nil="true" />
+  <Type>Computer</Type>
+  <SubType i:nil="true" />
+  <Index i:nil="true" />
+  <Name>This PC</Name>
+  <FolderTypeId i:nil="true" />
+  <Keywords i:nil="true" />
+  <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+  <Owner i:nil="true" />
+  <Reader i:nil="true" />
+  <Children>
+    <Item>
+      <Id>ce5e5bdb-8ae3-4e02-aaf1-3a46ff6ffe3f</Id>
+      <ParentId>2030abd0-8396-4491-aa9c-6ecf940d7ab1</ParentId>
+      <LinkedItemId i:nil="true" />
+      <Type>Drive</Type>
+      <SubType>data (D:)</SubType>
+      <Index i:nil="true" />
+      <Name>D:\</Name>
+      <FolderTypeId i:nil="true" />
+      <Keywords i:nil="true" />
+      <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+      <Owner i:nil="true" />
+      <Reader i:nil="true" />
+      <Children>
+        <Item>
+          <Id>0cd76b6a-dd4f-48e6-b7c1-8cf985ee47eb</Id>
+          <ParentId>ce5e5bdb-8ae3-4e02-aaf1-3a46ff6ffe3f</ParentId>
+          <LinkedItemId i:nil="true" />
+          <Type>Folder</Type>
+          <SubType i:nil="true" />
+          <Index i:nil="true" />
+          <Name>SY</Name>
+          <FolderTypeId i:nil="true" />
+          <Keywords i:nil="true" />
+          <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+          <Owner i:nil="true" />
+          <Reader i:nil="true" />
+          <Children>
+            <Item>
+              <Id>0ea5e12f-da5e-4315-9fd4-226890ca0b6d</Id>
+              <ParentId>0cd76b6a-dd4f-48e6-b7c1-8cf985ee47eb</ParentId>
+              <LinkedItemId i:nil="true" />
+              <Type>Folder</Type>
+              <SubType i:nil="true" />
+              <Index i:nil="true" />
+              <Name>H&amp;E</Name>
+              <FolderTypeId i:nil="true" />
+              <Keywords i:nil="true" />
+              <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+              <Owner i:nil="true" />
+              <Reader i:nil="true" />
+              <Children>
+                <Item>
+                  <Id>29cfc56f-e0f9-49ff-9d72-7d9d6c7513de</Id>
+                  <ParentId>0ea5e12f-da5e-4315-9fd4-226890ca0b6d</ParentId>
+                  <LinkedItemId i:nil="true" />
+                  <Type>Folder</Type>
+                  <SubType i:nil="true" />
+                  <Index i:nil="true" />
+                  <Name>병리</Name>
+                  <FolderTypeId i:nil="true" />
+                  <Keywords i:nil="true" />
+                  <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+                  <Owner i:nil="true" />
+                  <Reader i:nil="true" />
+                  <Children>
+                    <Item>
+                      <Id>81dd77f7-c875-4d62-943c-f8187123d328</Id>
+                      <ParentId>29cfc56f-e0f9-49ff-9d72-7d9d6c7513de</ParentId>
+                      <LinkedItemId i:nil="true" />
+                      <Type>Folder</Type>
+                      <SubType i:nil="true" />
+                      <Index i:nil="true" />
+                      <Name>0621</Name>
+                      <FolderTypeId i:nil="true" />
+                      <Keywords i:nil="true" />
+                      <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+                      <Owner i:nil="true" />
+                      <Reader i:nil="true" />
+                      <Children>
+                        <Item>
+                          <Id>634ee6f2-e3fe-4f87-8752-9f1480b5ae16</Id>
+                          <ParentId>81dd77f7-c875-4d62-943c-f8187123d328</ParentId>
+                          <LinkedItemId i:nil="true" />
+                          <Type>Folder</Type>
+                          <SubType i:nil="true" />
+                          <Index i:nil="true" />
+                          <Name>CTL</Name>
+                          <FolderTypeId i:nil="true" />
+                          <Keywords i:nil="true" />
+                          <LastModifiedDate>0001-01-01T00:00:00</LastModifiedDate>
+                          <Owner i:nil="true" />
+                          <Reader i:nil="true" />
+                          <Children>
+                            <Item>
+                              <Id>61379b1e-2c7b-4f69-976c-e502466b63bf</Id>
+                              <ParentId>634ee6f2-e3fe-4f87-8752-9f1480b5ae16</ParentId>
+                              <LinkedItemId i:nil="true" />
+                              <Type>Folder</Type>
+                              <SubType i:nil="true" />
+                              <Index i:nil="true" />
+                              <Name>3</Name>
+                              <FolderTypeId i:nil="true" />
+                              <Keywords i:nil="true" />
+                              <LastModifiedDate>2020-06-22T02:33:13.5904702+09:00</LastModifiedDate>
+                              <Owner i:nil="true" />
+                              <Reader i:nil="true" />
+                              <Children>
+                                <Item>
+                                  <Id>dc48b394-14bf-4b8a-8480-352e9b4aadc2</Id>
+                                  <ParentId>61379b1e-2c7b-4f69-976c-e502466b63bf</ParentId>
+                                  <LinkedItemId i:nil="true" />
+                                  <Type>Collection</Type>
+                                  <SubType>Image</SubType>
+                                  <Index i:nil="true" />
+                                  <Name>CTL3_2_1.jpg</Name>
+                                  <FolderTypeId i:nil="true" />
+                                  <Keywords></Keywords>
+                                  <LastModifiedDate>2020-06-22T02:33:14.4156201+09:00</LastModifiedDate>
+                                  <Owner i:nil="true" />
+                                  <Reader i:nil="true" />
+                                  <Children>
+                                    <Item>
+                                      <Id>66b3883a-9aa6-41e4-bf9d-435eee426325</Id>
+                                      <ParentId>dc48b394-14bf-4b8a-8480-352e9b4aadc2</ParentId>
+                                      <LinkedItemId i:nil="true" />
+                                      <Type>Leaf</Type>
+                                      <SubType>Image</SubType>
+                                      <Index i:nil="true" />
+                                      <Name>CTL3_2_1.jpg</Name>
+                                      <FolderTypeId i:nil="true" />
+                                      <Keywords></Keywords>
+                                      <LastModifiedDate>2020-06-22T02:33:14.4046316+09:00</LastModifiedDate>
+                                      <Owner i:nil="true" />
+                                      <Reader i:nil="true" />
+                                      <Children>
+                                        <Item>
+                                          <Id>3be424b2-fb83-406c-85dc-200dec6183d1</Id>
+                                          <ParentId>66b3883a-9aa6-41e4-bf9d-435eee426325</ParentId>
+                                          <LinkedItemId i:nil="true" />
+                                          <Type>Derived</Type>
+                                          <SubType>Image</SubType>
+                                          <Index i:nil="true" />
+                                          <Name>CTL3_2_1.jpg.thb</Name>
+                                          <FolderTypeId i:nil="true" />
+                                          <Keywords></Keywords>
+                                          <LastModifiedDate>2020-06-22T02:33:14.4046316+09:00</LastModifiedDate>
+                                          <Owner i:nil="true" />
+                                          <Reader i:nil="true" />
+                                        </Item>
+                                      </Children>
+                                    </Item>
+                                    <Item>
+                                      <Id>8cbd35a2-5fb8-497e-86ae-e19a145ac053</Id>
+                                      <ParentId>dc48b394-14bf-4b8a-8480-352e9b4aadc2</ParentId>
+                                      <LinkedItemId i:nil="true" />
+                                      <Type>Leaf</Type>
+                                      <SubType>DXAnnotationData</SubType>
+                                      <Index i:nil="true" />
+                                      <Name>CTL3_2_1.jpg.anx</Name>
+                                      <FolderTypeId i:nil="true" />
+                                      <Keywords></Keywords>
+                                      <LastModifiedDate>2020-06-22T02:33:13.7473039+09:00</LastModifiedDate>
+                                      <Owner i:nil="true" />
+                                      <Reader i:nil="true" />
+                                    </Item>
+                                    <Item>
+                                      <Id>ad8a2b61-a754-4c81-a7b3-47bb59d48d00</Id>
+                                      <ParentId>dc48b394-14bf-4b8a-8480-352e9b4aadc2</ParentId>
+                                      <LinkedItemId i:nil="true" />
+                                      <Type>Leaf</Type>
+                                      <SubType>DXScaleBarSettingsData</SubType>
+                                      <Index i:nil="true" />
+                                      <Name>CTL3_2_1.jpg.sbx</Name>
+                                      <FolderTypeId i:nil="true" />
+                                      <Keywords></Keywords>
+                                      <LastModifiedDate>2020-06-22T02:33:13.7483029+09:00</LastModifiedDate>
+                                      <Owner i:nil="true" />
+                                      <Reader i:nil="true" />
+                                    </Item>
+                                    <Item>
+                                      <Id>00ad76f9-1916-4462-9331-03e45d6ee75b</Id>
+                                      <ParentId>dc48b394-14bf-4b8a-8480-352e9b4aadc2</ParentId>
+                                      <LinkedItemId i:nil="true" />
+                                      <Type>Leaf</Type>
+                                      <SubType>DXExtendedAnnotationData</SubType>
+                                      <Index i:nil="true" />
+                                      <Name>CTL3_2_1.jpg.eax</Name>
+                                      <FolderTypeId i:nil="true" />
+                                      <Keywords></Keywords>
+                                      <LastModifiedDate>2020-06-22T02:33:13.7512991+09:00</LastModifiedDate>
+                                      <Owner i:nil="true" />
+                                      <Reader i:nil="true" />
+                                    </Item>
+                                  </Children>
+                                  <ItemValues>
+                                    <ItemValue>
+                                      <Id>95b3c314-8eb4-42e0-a13b-8420fca82ca5</Id>
+                                      <ItemId>dc48b394-14bf-4b8a-8480-352e9b4aadc2</ItemId>
+                                      <Name>Image_Description</Name>
+                                      <Value xmlns:d20p1="http://www.w3.org/2001/XMLSchema" i:type="d20p1:string"></Value>
+                                    </ItemValue>
+                                    <ItemValue>
+                                      <Id>5f6c7ed6-0213-42d8-a9fb-ca6618ddec12</Id>
+                                      <ItemId>dc48b394-14bf-4b8a-8480-352e9b4aadc2</ItemId>
+                                      <Name>Image_Notes</Name>
+                                      <Value xmlns:d20p1="http://www.w3.org/2001/XMLSchema" i:type="d20p1:string"></Value>
+                                    </ItemValue>
+                                  </ItemValues>
+                                  <LasImage>
+                                    <Id>dc48b394-14bf-4b8a-8480-352e9b4aadc2</Id>
+                                    <Included>false</Included>
+                                    <Processed>true</Processed>
+                                    <UnitName>Microns</UnitName>
+                                    <CreationUserName>생리학교실-PC\생리학교실</CreationUserName>
+                                    <ModificationUserName>생리학교실-PC\생리학교실</ModificationUserName>
+                                    <AcquiredDate>2020-06-22T02:33:13.7253264+09:00</AcquiredDate>
+                                    <CreationDate>2020-06-22T02:33:13.5904702+09:00</CreationDate>
+                                    <ImportDate i:nil="true" />
+                                    <XMetresPerPixel>3.8100006811555337E-07</XMetresPerPixel>
+                                    <YMetresPerPixel>3.8100006811555337E-07</YMetresPerPixel>
+                                    <BitDepth>24</BitDepth>
+                                    <NumPixelsX>1600</NumPixelsX>
+                                    <NumPixelsY>1200</NumPixelsY>
+                                    <FileSize>552453</FileSize>
+                                    <DecimalPlaces>3</DecimalPlaces>
+                                    <Camera>
+                                      <Id>dc48b394-14bf-4b8a-8480-352e9b4aadc2</Id>
+                                      <Name>Leica ICC50 E Camera</Name>
+                                      <Serial_Number>1816110301</Serial_Number>
+                                      <Exposure>37.0 ms</Exposure>
+                                      <Gamma>1</Gamma>
+                                      <Gain>5.0 x</Gain>
+                                      <Auto_Exposure>On</Auto_Exposure>
+                                      <Brightness>60 %</Brightness>
+                                      <Black_Clip>0</Black_Clip>
+                                      <White_Clip>255</White_Clip>
+                                      <Image_Type>Colour</Image_Type>
+                                      <Capture_Format>2.0 MP (1600 x 1200) 4:3</Capture_Format>
+                                      <Shading></Shading>
+                                      <Sharpening>Off</Sharpening>
+                                    </Camera>
+                                    <ImageValues>
+                                      <ImageValue>
+                                        <Id>0b4cd53f-a6a2-42b7-9130-fe5f22cad475</Id>
+                                        <LasImageId>dc48b394-14bf-4b8a-8480-352e9b4aadc2</LasImageId>
+                                        <Name>Microscope_Stand_Name</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">DMIL</Value>
+                                      </ImageValue>
+                                      <ImageValue>
+                                        <Id>cdbb67c8-5828-4098-b3d6-6f490f050c17</Id>
+                                        <LasImageId>dc48b394-14bf-4b8a-8480-352e9b4aadc2</LasImageId>
+                                        <Name>Microscope_Stand_Configuration_Software_Version_Infos</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">O969F297</Value>
+                                      </ImageValue>
+                                      <ImageValue>
+                                        <Id>fb4e1f6b-13d0-459a-a09d-20f254d9c187</Id>
+                                        <LasImageId>dc48b394-14bf-4b8a-8480-352e9b4aadc2</LasImageId>
+                                        <Name>Microscope_Nosepiece_Objective_Magnification</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">20</Value>
+                                      </ImageValue>
+                                      <ImageValue>
+                                        <Id>aae5f81f-3923-4e2c-9f90-0803ca511ae3</Id>
+                                        <LasImageId>dc48b394-14bf-4b8a-8480-352e9b4aadc2</LasImageId>
+                                        <Name>Microscope_Nosepiece_Objective_Article_No</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">11506272</Value>
+                                      </ImageValue>
+                                      <ImageValue>
+                                        <Id>f6ebec55-cc8e-465f-8e06-5b6ee13f4e59</Id>
+                                        <LasImageId>dc48b394-14bf-4b8a-8480-352e9b4aadc2</LasImageId>
+                                        <Name>Microscope_Nosepiece_Objective_Aperture</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">0.30</Value>
+                                      </ImageValue>
+                                      <ImageValue>
+                                        <Id>5bdde0e6-745b-41d9-9819-135cc60a73a4</Id>
+                                        <LasImageId>dc48b394-14bf-4b8a-8480-352e9b4aadc2</LasImageId>
+                                        <Name>Microscope_Nosepiece_Objective_Type</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">DRY</Value>
+                                      </ImageValue>
+                                      <ImageValue>
+                                        <Id>3aebeb06-1d59-4293-b0c2-9f2b1fe8e094</Id>
+                                        <LasImageId>dc48b394-14bf-4b8a-8480-352e9b4aadc2</LasImageId>
+                                        <Name>Microscope_Ports_Port_Name</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">VISUAL</Value>
+                                      </ImageValue>
+                                      <ImageValue>
+                                        <Id>ad7e0f5c-e9ca-4ad9-9699-0fd3b54dce18</Id>
+                                        <LasImageId>dc48b394-14bf-4b8a-8480-352e9b4aadc2</LasImageId>
+                                        <Name>Microscope_Ports_Num</Name>
+                                        <Type>System.String</Type>
+                                        <Value xmlns:d21p1="http://www.w3.org/2001/XMLSchema" i:type="d21p1:string">2</Value>
+                                      </ImageValue>
+                                    </ImageValues>
+                                  </LasImage>
+                                </Item>
+                              </Children>
+                            </Item>
+                          </Children>
+                        </Item>
+                      </Children>
+                    </Item>
+                  </Children>
+                </Item>
+              </Children>
+            </Item>
+          </Children>
+        </Item>
+      </Children>
+    </Item>
+  </Children>
+</Item>

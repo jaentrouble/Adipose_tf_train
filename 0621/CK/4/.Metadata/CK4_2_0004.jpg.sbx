@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<DXScaleBarSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.leica.com">
+  <IsShowScaleBar>false</IsShowScaleBar>
+  <IsBurnIn>true</IsBurnIn>
+  <HasPendingBurnIn>false</HasPendingBurnIn>
+  <LineThickness>10.9375</LineThickness>
+  <SignificantDigits>2</SignificantDigits>
+  <Size>50</Size>
+  <ImageSize>
+    <Width>1600</Width>
+    <Height>1200</Height>
+  </ImageSize>
+  <Alpha>0</Alpha>
+  <RotationAngle>0</RotationAngle>
+  <IsShowZoomFactor>false</IsShowZoomFactor>
+  <ZoomFactor>0</ZoomFactor>
+  <IsShowActualSize>false</IsShowActualSize>
+  <IsSnapToOrigin>false</IsSnapToOrigin>
+  <RenderMode>Normal</RenderMode>
+  <ScaleBarData>
+    <Location>
+      <X>0.0333333351</X>
+      <Y>0.933333337</Y>
+    </Location>
+    <Length>0.082064062356948853</Length>
+    <Position>BottomLeft</Position>
+  </ScaleBarData>
+  <ScaleBarLocation>
+    <X>0.0333333351</X>
+    <Y>0.933333337</Y>
+  </ScaleBarLocation>
+  <ScaleBarLength>0.082064062356948853</ScaleBarLength>
+  <ScaleBarPosition>BottomLeft</ScaleBarPosition>
+  <LabelFont>
+    <Size>24.609375</Size>
+    <Name>Arial Narrow</Name>
+    <Style>Bold Italic</Style>
+  </LabelFont>
+  <ForegroundColour>-1</ForegroundColour>
+  <BackgroundColour>6632747</BackgroundColour>
+  <ScaleBarMode>FixedSize</ScaleBarMode>
+  <ScaleBarStyle>Horizontal</ScaleBarStyle>
+  <ScaleBarEndSize>Small</ScaleBarEndSize>
+</DXScaleBarSettings>
