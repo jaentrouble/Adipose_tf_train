@@ -123,3 +123,4 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+raw_files.7z
