@@ -123,4 +123,7 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Image raw data
 raw_files.7z
+0621/
