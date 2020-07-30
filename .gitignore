@@ -128,3 +128,4 @@ dmypy.json
 *.7z
 .vscode/
 *.npz
+*.tfrecords
