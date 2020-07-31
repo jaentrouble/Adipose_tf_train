@@ -14,9 +14,9 @@ tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir,
                                                       histogram_freq=1,
                                                       profile_batch='5,7')
 mymodel.fit(
-    x=load_dataset('Adipose_train.tfrecords', 1000),
-    epochs=1,
-    steps_per_epoch=10,
+    x=load_dataset('Adipose_train.tfrecords', 10000),
+    epochs=20,
+    steps_per_epoch=500,
     callbacks=[tensorboard_callback],
 )
 print('Took : {} seconds'.format(time.time()-st))
