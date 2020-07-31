@@ -10,6 +10,8 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument('-mf', dest='mixed_f', action='store_true', default=False)
 parser.add_argument('--name',dest='name', default=None)
+parser.add_argument('--epochs',dest='epochs', default=10)
+parser.add_argument('--steps',dest='steps', default=1000)
 args = parser.parse_args()
 
 if args.mixed_f:
@@ -35,8 +37,8 @@ tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir,
                                                       profile_batch='3,5')
 mymodel.fit(
     x=load_dataset('train_image', 10000),
-    epochs=1,
-    steps_per_epoch=10,
+    epochs=args.epochs,
+    steps_per_epoch=args.steps,
     callbacks=[tensorboard_callback],
 )
 if args.name == None:
