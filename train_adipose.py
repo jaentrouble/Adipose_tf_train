@@ -31,14 +31,18 @@ mymodel.compile(
         metrics=[keras.metrics.BinaryAccuracy()],
     )
 mymodel.summary()
-log_dir = "logs/fit/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+if args.name == None:
+    log_name = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+else :
+    log_name = args.name
+log_dir = "logs/fit/" + log_name
 tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir,
                                                       histogram_freq=1,
                                                       profile_batch='3,5')
 mymodel.fit(
-    x=load_dataset('train_image', 10000),
-    epochs=args.epochs,
-    steps_per_epoch=args.steps,
+    x=load_dataset('train_image', 3000),
+    epochs=int(args.epochs),
+    steps_per_epoch=int(args.steps),
     callbacks=[tensorboard_callback],
 )
 if args.name == None:

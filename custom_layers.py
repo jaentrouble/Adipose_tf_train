@@ -64,12 +64,17 @@ class Max_Unpool2D(layers.Layer):
         outputs = tf.scatter_nd(idx, flatten_input, shape=flat_output_shape)
         outputs = tf.reshape(outputs, output_shape)
         set_input_shape = inputs.get_shape()
-        set_output_shape = [
-            set_input_shape[0],
-            set_input_shape[1]*self.ksize[0],
-            set_input_shape[2]*self.ksize[1],
-            set_input_shape[3],
-        ]
+        set_output_shape = []
+        set_output_shape.append(set_input_shape[0])
+        if set_input_shape[1] != None:
+            set_output_shape.append(set_input_shape[1]*self.ksize[0])
+        else:
+            set_output_shape.append(set_input_shape[1])
+        if set_input_shape[2] != None:
+            set_output_shape.append(set_input_shape[2]*self.ksize[1])
+        else:
+            set_output_shape.append(set_input_shape[2])
+        set_output_shape.append(set_input_shape[3])
         outputs.set_shape(set_output_shape)
         return outputs        
 
