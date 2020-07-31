@@ -132,7 +132,7 @@ def load_dataset(image_dir, shuffle_buffer):
 
 if __name__ == '__main__':
     ds = load_dataset('train_image',1)
-    for img, msk in ds.take(1).as_numpy_iterator():
+    for img, msk in ds.take(2).as_numpy_iterator():
         fig = plt.figure(figsize=(18,16))
         ax = fig.add_subplot(1,2,1)
         ax.imshow(img[0])

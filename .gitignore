@@ -126,7 +126,6 @@ dmypy.json
 
 #Image raw data
 *.7z
-.vscode/
 *.npz
 *.tfrecords
 logs/
