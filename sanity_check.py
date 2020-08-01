@@ -41,6 +41,16 @@ tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir,
 
 ds = load_dataset('train_image',1000)
 Trash = ds.take(int(args.steps))
+for img, msk in ds.take(2).as_numpy_iterator():
+    fig = plt.figure(figsize=(18,16))
+    ax = fig.add_subplot(1,3,1)
+    ax.imshow(img[0])
+    ax = fig.add_subplot(1,3,2)
+    ax.imshow(msk[0], cmap='binary')
+    ax = fig.add_subplot(1,3,3)
+    ax.imshow(mymodel.predict(img)[0], cmap='binary')
+    plt.savefig('start')
+
 mymodel.fit(
     x=Trash,
 
@@ -56,4 +66,4 @@ for img, msk in ds.take(2).as_numpy_iterator():
     ax.imshow(msk[0], cmap='binary')
     ax = fig.add_subplot(1,3,3)
     ax.imshow(mymodel.predict(img)[0], cmap='binary')
-    plt.savefig('test')
+    plt.savefig('end')
