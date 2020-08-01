@@ -13,6 +13,7 @@ parser.add_argument('-mf', dest='mixed_f', action='store_true', default=False)
 parser.add_argument('--name',dest='name', default=None)
 parser.add_argument('--epochs',dest='epochs', default=10)
 parser.add_argument('--steps',dest='steps', default=1000)
+parser.add_argument('--thres',dest='threshold',default=0.5)
 args = parser.parse_args()
 
 if args.mixed_f:
@@ -27,7 +28,7 @@ mymodel = sanity_conv(inputs)
 mymodel.compile(
         optimizer='adam',
         loss='binary_crossentropy',
-        metrics=[keras.metrics.BinaryAccuracy(threshold=0.8)],
+        metrics=[keras.metrics.BinaryAccuracy(threshold=args.threshold)],
     )
 mymodel.summary()
 if args.name == None:
