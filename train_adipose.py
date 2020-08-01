@@ -28,7 +28,8 @@ mymodel = full_conv1(inputs)
 mymodel.compile(
         optimizer='adam',
         loss='binary_crossentropy',
-        metrics=[keras.metrics.BinaryAccuracy()],
+        metrics=[keras.metrics.BinaryAccuracy(threshold=0.1),
+                keras.metrics.MeanSquaredError()],
     )
 mymodel.summary()
 if args.name == None:
