@@ -40,11 +40,11 @@ tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir,
                                                       profile_batch='3,5')
 
 ds = load_dataset('train_image',1000)
-Trash = ds.take(3)
+Trash = ds.take(int(args.steps))
 mymodel.fit(
     x=Trash,
 
-    epochs=1,
+    epochs=int(args.epochs),
     # steps_per_epoch=int(args.steps),
     callbacks=[tensorboard_callback],
 )
