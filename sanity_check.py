@@ -28,7 +28,7 @@ mymodel = sanity_conv(inputs)
 mymodel.compile(
         optimizer='adam',
         loss='binary_crossentropy',
-        metrics=[keras.metrics.BinaryAccuracy(threshold=args.threshold)],
+        metrics=[keras.metrics.BinaryAccuracy(threshold=float(args.threshold))],
     )
 mymodel.summary()
 if args.name == None:
@@ -55,7 +55,7 @@ for img, msk in ds.take(2).as_numpy_iterator():
 mymodel.fit(
     x=Trash,
 
-    epochs=float(args.epochs),
+    epochs=int(args.epochs),
     # steps_per_epoch=int(args.steps),
     callbacks=[tensorboard_callback],
 )
