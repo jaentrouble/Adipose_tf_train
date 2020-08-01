@@ -27,7 +27,7 @@ mymodel = sanity_conv(inputs)
 mymodel.compile(
         optimizer='adam',
         loss='binary_crossentropy',
-        metrics=[keras.metrics.BinaryAccuracy()],
+        metrics=[keras.metrics.BinaryAccuracy(threshold=0.8)],
     )
 mymodel.summary()
 if args.name == None:
