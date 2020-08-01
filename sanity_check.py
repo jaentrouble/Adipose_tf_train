@@ -55,7 +55,7 @@ for img, msk in ds.take(2).as_numpy_iterator():
 mymodel.fit(
     x=Trash,
 
-    epochs=int(args.epochs),
+    epochs=float(args.epochs),
     # steps_per_epoch=int(args.steps),
     callbacks=[tensorboard_callback],
 )
