@@ -39,7 +39,8 @@ else :
 log_dir = "logs/fit/" + log_name
 tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir,
                                                       histogram_freq=1,
-                                                      profile_batch='3,5')
+                                                      profile_batch='3,5',
+                                                      update_freq=100)
 mymodel.fit(
     x=load_dataset('train_image', 3000),
     epochs=int(args.epochs),
