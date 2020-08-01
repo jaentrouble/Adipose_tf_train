@@ -9,7 +9,7 @@ def sanity_conv(inputs):
     x = layers.MaxPooling2D()(x)
     x = layers.Conv2DTranspose(128, 3, padding='same', activation='relu')(x)
     x = layers.Conv2D(1, 3, padding='same', activation='linear')(x)
-    x = tf.squeeze(x, axis=-1)
+    # x = tf.squeeze(x, axis=-1)
     outputs = layers.Activation('softmax', dtype='float32')(x)
     model = keras.Model(inputs=inputs, outputs=outputs)
     return model
