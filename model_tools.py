@@ -111,7 +111,7 @@ class SampleGenerator():
                 np.all(mask==WALL_COLOR,axis=-1).astype(np.float32))
 
 class ValGenerator(SampleGenerator):
-    def __init__(self, iamge_dir):
+    def __init__(self, image_dir):
         super().__init__(image_dir)
         self.aug = A.Compose([
             A.Resize(1100,1300),
