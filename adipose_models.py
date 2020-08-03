@@ -3,6 +3,7 @@ import tensorflow.keras as keras
 from tensorflow.keras import layers
 import custom_layers as mylayers
 
+# Get inputs and return outputs
 
 def full_conv1(inputs):
     x = layers.Conv2D(64, 3, padding='same', activation='relu')(inputs)
