@@ -29,6 +29,5 @@ def full_conv1(inputs):
     x = layers.Conv2DTranspose(128, 3, padding='same', activation='relu')(x)
     x = layers.Conv2D(1, 3, padding='same', activation='linear')(x)
     x = tf.squeeze(x, axis=-1)
-    outputs = layers.Activation('softmax', dtype='float32')(x)
-    model = keras.Model(inputs=inputs, outputs=outputs)
-    return model
+    outputs = layers.Activation('linear', dtype='float32')(x)
+    return outputs

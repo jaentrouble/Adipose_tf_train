@@ -5,6 +5,7 @@ import albumentations as A
 import random
 import numpy as np
 import matplotlib.pyplot as plt
+from tensorflow import keras
 
 IMG_SIZE = [200,200,3]
 MASK_SIZE = [100,100]
@@ -118,6 +119,23 @@ class ValGenerator(SampleGenerator):
             A.RandomCrop(IMG_SIZE[0], IMG_SIZE[1], p=1),
         ])
 
+class AdiposeModel(keras.Model):
+    def __init__(self, inputs, model_function):
+        """
+        Because of numerical stability, softmax layer should be
+        taken out, and use it only when not training.
+        Args
+            inputs : keras.Input
+            model_function : function that takes keras.Input and returns
+            output tensor of logits
+        """
+        super().__init__()
+        self.logits = model_function(inputs)
+        
+    def call(self, inputs, training=None):
+        if training:
+            return self.logits(inputs)
+        return tf.math.sigmoid(self.logits(inputs))
 
 def cast_function(image, mask):
     x = tf.cast(image, tf.float32) / 255.0

@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras.mixed_precision import experimental as mixed_precision
 from adipose_models import *
-from model_tools import load_dataset
+from model_tools import load_dataset, AdiposeModel
 import datetime
 import time
 import argparse
@@ -24,7 +24,7 @@ mixed_precision.set_policy(policy)
 st = time.time()
 
 inputs = keras.Input((200,200,3))
-mymodel = full_conv1(inputs)
+mymodel = AdiposeModel(inputs, full_conv1)
 mymodel.compile(
         optimizer='adam',
         loss='binary_crossentropy',
