@@ -110,6 +110,15 @@ class SampleGenerator():
             self.masks.append(
                 np.all(mask==WALL_COLOR,axis=-1).astype(np.float32))
 
+class ValGenerator(SampleGenerator):
+    def __init__(self, iamge_dir):
+        super().__init__(image_dir)
+        self.aug = A.Compose([
+            A.Resize(1100,1300),
+            A.RandomCrop(IMG_SIZE[0], IMG_SIZE[1], p=1),
+        ])
+
+
 def cast_function(image, mask):
     x = tf.cast(image, tf.float32) / 255.0
     y = tf.cast(mask, tf.float32)
@@ -119,6 +128,21 @@ def load_dataset(image_dir, shuffle_buffer):
     autotune = tf.data.experimental.AUTOTUNE
     dataset = tf.data.Dataset.from_generator(
         SampleGenerator,
+        (tf.uint8, tf.float32),
+        (tf.TensorShape(IMG_SIZE), tf.TensorShape(MASK_SIZE)),
+        args=[image_dir],
+    )
+    dataset = dataset.shuffle(shuffle_buffer)
+    dataset = dataset.map(cast_function, num_parallel_calls=autotune)
+    dataset = dataset.batch(32, drop_remainder=True)
+    dataset = dataset.prefetch(autotune)
+    dataset = dataset.repeat()
+    return dataset
+
+def load_valset(image_dir, shuffle_buffer):
+    autotune = tf.data.experimental.AUTOTUNE
+    dataset = tf.data.Dataset.from_generator(
+        ValGenerator,
         (tf.uint8, tf.float32),
         (tf.TensorShape(IMG_SIZE), tf.TensorShape(MASK_SIZE)),
         args=[image_dir],
