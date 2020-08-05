@@ -18,3 +18,6 @@ def lr_step2(epoch, lr):
     if epoch > 50 :
         lr = 0.005
     return lr
+
+def low_lr(epoch, lr) :
+    return 1e-5
