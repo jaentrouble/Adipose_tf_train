@@ -3,7 +3,7 @@ from tensorflow import keras
 from tensorflow.keras.mixed_precision import experimental as mixed_precision
 import adipose_models as models
 from model_tools import load_dataset, AdiposeModel, load_valset
-from model_lr import *
+import model_lr
 import datetime
 import time
 import argparse
@@ -14,9 +14,11 @@ parser.add_argument('--name',dest='name', default=None)
 parser.add_argument('--epochs',dest='epochs', default=10)
 parser.add_argument('--steps',dest='steps', default=1000)
 parser.add_argument('--model', dest='model')
+parser.add_argument('-lr', dest='lr')
 args = parser.parse_args()
 
 MODEL = getattr(models, args.model)
+LR = getattr(model_lr, args.lr)
 if args.mixed_f:
     policy = mixed_precision.Policy('mixed_float16')
     print('policy: mixed_float16')
@@ -45,7 +47,7 @@ tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir,
                                                       histogram_freq=1,
                                                       profile_batch='3,5',
                                                       update_freq='epoch')
-lr_callback = keras.callbacks.LearningRateScheduler(lr_step, verbose=1)
+lr_callback = keras.callbacks.LearningRateScheduler(LR, verbose=1)
 
 if args.name == None:
     mymodel.save('saved_model/'+ datetime.datetime.now().strftime("%Y%m%d-%H%M%S")+'/default')
