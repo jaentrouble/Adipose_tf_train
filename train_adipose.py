@@ -1,7 +1,7 @@
 import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras.mixed_precision import experimental as mixed_precision
-from adipose_models import *
+import adipose_models as models
 from model_tools import load_dataset, AdiposeModel
 import datetime
 import time
@@ -12,8 +12,10 @@ parser.add_argument('-mf', dest='mixed_f', action='store_true', default=False)
 parser.add_argument('--name',dest='name', default=None)
 parser.add_argument('--epochs',dest='epochs', default=10)
 parser.add_argument('--steps',dest='steps', default=1000)
+parser.add_argument('--model', dest='model')
 args = parser.parse_args()
 
+MODEL = getattr(models, args.model)
 if args.mixed_f:
     policy = mixed_precision.Policy('mixed_float16')
     print('policy: mixed_float16')
@@ -24,14 +26,14 @@ mixed_precision.set_policy(policy)
 st = time.time()
 
 inputs = keras.Input((200,200,3))
-mymodel = AdiposeModel(inputs, full_conv1)
+mymodel = AdiposeModel(inputs, MODEL)
+loss = keras.losses.BinaryCrossentropy(from_logits=True)
 mymodel.compile(
         optimizer='adam',
-        loss='binary_crossentropy',
+        loss=loss,
         metrics=[keras.metrics.BinaryAccuracy(threshold=0.1),
                 keras.metrics.MeanSquaredError()],
     )
-mymodel.summary()
 if args.name == None:
     log_name = datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
 else :

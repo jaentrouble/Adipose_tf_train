@@ -32,3 +32,6 @@ def full_conv1(inputs):
     x = tf.squeeze(x, axis=-1)
     outputs = layers.Activation('linear', dtype='float32')(x)
     return outputs
+
+def full_conv2(inputs):
+    pass

@@ -130,7 +130,9 @@ class AdiposeModel(keras.Model):
             output tensor of logits
         """
         super().__init__()
-        self.logits = model_function(inputs)
+        outputs = model_function(inputs)
+        self.logits = keras.Model(inputs=inputs, outputs=outputs)
+        self.logits.summary()
         
     def call(self, inputs, training=None):
         if training:
