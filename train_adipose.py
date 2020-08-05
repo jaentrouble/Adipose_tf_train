@@ -2,7 +2,7 @@ import tensorflow as tf
 from tensorflow import keras
 from tensorflow.keras.mixed_precision import experimental as mixed_precision
 import adipose_models as models
-from model_tools import load_dataset, AdiposeModel
+from model_tools import load_dataset, AdiposeModel, load_valset
 import datetime
 import time
 import argparse
@@ -42,11 +42,13 @@ log_dir = "logs/fit/" + log_name
 tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir,
                                                       histogram_freq=1,
                                                       profile_batch='3,5',
-                                                      update_freq=100)
+                                                      update_freq='epoch')
 mymodel.fit(
     x=load_dataset('train_image', 3000),
     epochs=int(args.epochs),
     steps_per_epoch=int(args.steps),
+    validation_data=load_valset('val_image',int(args.steps)),
+    validation_steps=int(args.steps),
     callbacks=[tensorboard_callback],
 )
 if args.name == None:

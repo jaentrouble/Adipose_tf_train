@@ -34,4 +34,9 @@ def full_conv1(inputs):
     return outputs
 
 def full_conv2(inputs):
-    pass
+    x = layers.Conv2D(32, 3, padding='same', activation='relu')(inputs)
+    x = layers.MaxPooling2D()(x)
+    x = layers.Conv2D(1, 3, padding='same', activation='relu')(x)
+    x = tf.squeeze(x, axis=-1)
+    outputs = layers.Activation('linear', dtype='float32')(x)
+    return outputs
