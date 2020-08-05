@@ -45,7 +45,7 @@ tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir,
                                                       histogram_freq=1,
                                                       profile_batch='3,5',
                                                       update_freq='epoch')
-lr_callback = keras.callbacks.LearningRateScheduler(lr_step, verbos=0)
+lr_callback = keras.callbacks.LearningRateScheduler(lr_step, verbose=1)
 
 mymodel.fit(
     x=load_dataset('train_image', 3000),
