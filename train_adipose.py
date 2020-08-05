@@ -3,6 +3,7 @@ from tensorflow import keras
 from tensorflow.keras.mixed_precision import experimental as mixed_precision
 import adipose_models as models
 from model_tools import load_dataset, AdiposeModel, load_valset
+from model_lr import *
 import datetime
 import time
 import argparse
@@ -39,10 +40,13 @@ if args.name == None:
 else :
     log_name = args.name
 log_dir = "logs/fit/" + log_name
+
 tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir,
                                                       histogram_freq=1,
                                                       profile_batch='3,5',
                                                       update_freq='epoch')
+lr_callback = keras.callbacks.LearningRateScheduler(lr_step, verbos=0)
+
 mymodel.fit(
     x=load_dataset('train_image', 3000),
     epochs=int(args.epochs),
