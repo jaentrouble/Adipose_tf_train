@@ -1,5 +1,6 @@
 def lr_step(epoch, lr):
-    lr = 0.2
+    if epoch <= 10 :
+        lr = (epoch +1) * 0.01
     if epoch > 10 :
         lr = 0.02
     if epoch > 20 :
