@@ -36,6 +36,7 @@ def full_conv1(inputs):
 def full_conv2(inputs):
     x = layers.Conv2D(32, 3, padding='same', activation='relu')(inputs)
     x = layers.MaxPooling2D()(x)
+    # DO NOT USE ReLU at the last layer!!!
     x = layers.Conv2D(1, 3, padding='same', activation='relu')(x)
     x = tf.squeeze(x, axis=-1)
     outputs = layers.Activation('linear', dtype='float32')(x)
@@ -47,6 +48,17 @@ def full_conv3(inputs):
     x = layers.MaxPooling2D()(x)
     x = layers.Conv2D(64, 3, padding='same', activation='relu')(x)
     x = layers.Conv2D(1, 3, padding='same', activation='relu')(x)
+    # Relu was the problem!!!
+    x = tf.squeeze(x, axis=-1)
+    outputs = layers.Activation('linear', dtype='float32')(x)
+    return outputs
+
+def full_conv3_fix(inputs):
+    x = layers.Conv2D(32, 3, padding='same', activation='relu')(inputs)
+    x = layers.Conv2D(32, 3, padding='same', activation='relu')(x)
+    x = layers.MaxPooling2D()(x)
+    x = layers.Conv2D(64, 3, padding='same', activation='relu')(x)
+    x = layers.Conv2D(1, 3, padding='same', activation='linear')(x)
     x = tf.squeeze(x, axis=-1)
     outputs = layers.Activation('linear', dtype='float32')(x)
     return outputs
@@ -58,7 +70,7 @@ def full_conv4(inputs):
     x = layers.MaxPooling2D()(x)
     x = layers.Conv2D(64, 3, padding='same', activation='relu')(x)
     x = layers.Conv2D(64, 3, padding='same', activation='relu')(x)
-    x = layers.Conv2D(1, 3, padding='same', activation='relu')(x)
+    x = layers.Conv2D(1, 3, padding='same', activation='linear')(x)
     x = tf.squeeze(x, axis=-1)
     outputs = layers.Activation('linear', dtype='float32')(x)
     return outputs
