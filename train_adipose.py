@@ -48,7 +48,7 @@ tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir,
                                                       profile_batch='3,5',
                                                       update_freq='epoch')
 lr_callback = keras.callbacks.LearningRateScheduler(LR, verbose=1)
-
+lr_no_update = keras.callbacks.LearningRateScheduler(model_lr.lr_no_update, verbose=1)
 train_ds = load_dataset('train_image', 3000)
 
 # Warmup to save
@@ -56,6 +56,7 @@ mymodel.fit(
     x=train_ds,
     epochs=1,
     steps_per_epoch=1,
+    callbacks=[lr_no_update]
 )
 
 if args.name == None:
@@ -70,7 +71,7 @@ mymodel.fit(
     steps_per_epoch=int(args.steps),
     validation_data=load_valset('val_image',int(args.steps)//10 +1),
     validation_steps=int(args.steps),
-    callbacks=[tensorboard_callback],
+    callbacks=[tensorboard_callback, lr_callback],
 )
 if args.name == None:
     mymodel.save('saved_model/'+ datetime.datetime.now().strftime("%Y%m%d-%H%M%S"))
