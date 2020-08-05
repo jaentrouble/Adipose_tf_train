@@ -47,7 +47,7 @@ mymodel.fit(
     x=load_dataset('train_image', 3000),
     epochs=int(args.epochs),
     steps_per_epoch=int(args.steps),
-    validation_data=load_valset('val_image',int(args.steps)),
+    validation_data=load_valset('val_image',int(args.steps)//10 +1),
     validation_steps=int(args.steps),
     callbacks=[tensorboard_callback],
 )
