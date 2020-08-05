@@ -47,6 +47,12 @@ tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir,
                                                       update_freq='epoch')
 lr_callback = keras.callbacks.LearningRateScheduler(lr_step, verbose=1)
 
+if args.name == None:
+    mymodel.save('saved_model/'+ datetime.datetime.now().strftime("%Y%m%d-%H%M%S")+'/default')
+else:
+    mymodel.save('saved_model/' + args.name +'/default')
+
+
 mymodel.fit(
     x=load_dataset('train_image', 3000),
     epochs=int(args.epochs),
