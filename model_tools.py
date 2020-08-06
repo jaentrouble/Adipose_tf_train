@@ -136,8 +136,8 @@ class AdiposeModel(keras.Model):
         
     def call(self, inputs, training=None):
         if training:
-            return self.logits(inputs)
-        return tf.math.sigmoid(self.logits(inputs))
+            return self.logits(inputs, training=training)
+        return tf.math.sigmoid(self.logits(inputs, training=training))
 
 def cast_function(image, mask):
     x = tf.cast(image, tf.float32) / 255.0
