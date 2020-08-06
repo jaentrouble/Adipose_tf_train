@@ -22,5 +22,8 @@ def lr_step2(epoch, lr):
         lr = 0.005
     return lr
 
+def lr_mul_inv(epoch, lr):
+    return 0.01 / (epoch+1)
+
 def low_lr(epoch, lr) :
     return 1e-5
