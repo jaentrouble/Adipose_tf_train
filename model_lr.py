@@ -1,5 +1,5 @@
 def lr_no_update(epoch, lr):
-    return 0
+    return 0.0
 
 def lr_step(epoch, lr):
     lr = 0.2
