@@ -99,3 +99,16 @@ def full_conv5(inputs):
     x = tf.squeeze(x, axis=-1)
     outputs = layers.Activation('linear', dtype='float32')(x)
     return outputs
+
+def full_conv5_2(inputs):
+    x = layers.Conv2D(64, 3, padding='same', activation='relu')(inputs)
+    x = layers.Conv2D(64, 3, padding='same', activation='relu')(x)
+    x = layers.BatchNormalization()(x)
+    x = layers.MaxPooling2D()(x)
+    x = layers.Conv2D(128, 3, padding='same', activation='relu')(x)
+    x = layers.Conv2D(128, 3, padding='same', activation='relu')(x)
+    x = layers.BatchNormalization()(x)
+    x = layers.Conv2D(1, 3, padding='same', activation='linear')(x)
+    x = tf.squeeze(x, axis=-1)
+    outputs = layers.Activation('linear', dtype='float32')(x)
+    return outputs
